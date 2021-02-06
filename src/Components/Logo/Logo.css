@@ -1,0 +1,45 @@
+.Logo {
+    padding: 0 30px;
+    height: 100%;
+    box-sizing: border-box;
+    align-self: center;
+}
+
+.Logo img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    transform: translateY(-10px);
+}
+
+@media (max-width: 1100px) {
+    .Logo {
+        height: 50%;
+        padding: 0 15px;
+    }
+
+    .Logo img {
+        width: 75px;
+        height: 75px;
+        transform: translateY(-20px);
+    }
+}
+
+@media (max-width:900px) {
+
+    .Logo {
+        padding: 0 10px;
+    }
+
+    .Logo img {
+        width: 50px;
+        height: 50px;
+        transform: translateY(-15px);
+    }
+}
+
+@media (max-width:600px) {
+    .Logo {
+        padding: 10px 0;
+    }
+}

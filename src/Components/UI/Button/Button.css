@@ -1,0 +1,31 @@
+.Button {
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    border-left: 5px solid #16191a;
+}
+
+    
+.Button,
+.Button:link,
+.Button:visited {
+    display: inline-block;
+    outline: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    color: #2d3436;
+    transition: all .3s;
+    background-color: transparent;
+    border-radius: .8rem;
+}
+
+.Button:hover {
+    color: #e2e2e2;
+    box-shadow: 0 2rem 3rem rgba(45, 52, 54, .46);
+    background-color: rgba(132, 159, 167, .5);
+    border-radius: .8rem;
+    transform: translateY(.2rem);
+}

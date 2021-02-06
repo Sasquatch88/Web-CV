@@ -1,0 +1,26 @@
+.Menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: space-between; */
+}
+
+.NavLink {
+    text-decoration: none;
+}
+
+@media (max-width: 1100px) {
+    .Menu {
+        margin-bottom: 10px;
+    }
+}
+
+/* @media (max-width: 750px) {
+    .Menu {
+        display: none;
+    }
+} */
+

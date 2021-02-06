@@ -1,0 +1,440 @@
+.About {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(min-content, 30rem));
+    grid-template-rows: repeat(5, max-content);
+}
+
+.ListImage {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    background-color: rgba(111, 111, 111, .4);
+    border-radius: 20%;
+}
+
+.MainImage {
+    grid-area: 1 / 1 / 2 / 3;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    align-self: center;
+    justify-self: center;
+}
+
+.Copy {
+    grid-area: 1 / 3 / 2 / 6;
+    padding: 30px 70px 30px 1px;
+    font-size: 70px;;
+    font-family: 'Athiti', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    background-image: linear-gradient(to left, #5b6a6e, #16191a);
+    background-clip: text;
+    -webkit-background-clip: text; /*make background only on text*/
+    color: transparent;
+}
+
+.Contact {
+    grid-area: 2 / 1 / 3 / 6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 120%;
+    margin: 50px 0;
+    background-color: rgba(194, 189, 241, .6);
+    border-radius: 10px;
+    transform: translateX(-8.4%);
+}
+
+.ContactBox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ContactBox img {
+    margin: 0 15px 0 0;
+    background-color: transparent;
+}
+
+.ContactBox button {
+    outline: none;
+    border: none;
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    transform: translateY(3px);
+    background-color: transparent;
+}
+
+.Education {
+    grid-area: 3 / 1 / 4 / 4;
+}
+
+.Experience {
+    grid-area: 4 / 1 / 5 / 4;
+}
+
+.Experience, .Education {
+    list-style: none;
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+}
+
+.Experience ul, .Education ul {
+    list-style: none;
+}
+
+.Experience h1, .Education h1 {
+    font-size: 40px;
+    letter-spacing: 1.5px;
+}
+
+.Experience li, .Education li {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.Experience li::after, .Education li::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    height: 10px;
+    border-radius: 50px;
+    border-bottom: 3px solid rgb(76, 107, 138);
+}
+
+.Assets {
+    grid-area: 3 / 4 / 6 / 6;
+    background-color: rgba(194, 189, 241, .6);
+    border-radius: 10px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 40px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+
+.Assets ul {
+    list-style: none;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.Hobbys {
+    align-self: center;
+}
+
+.Hobbys li {
+    padding: 5px 0;
+    text-align: center;
+    transform: translateX(-15px);
+}
+
+.Skills {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Skills li {
+    padding: 5px 0;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: translateX(-35px);
+}
+
+.ListItem {
+    transform: translateX(0px);
+    font-weight: 800;
+    background-color: rgba(111, 111, 111, .4);
+    padding: 2px 12px;
+    border-radius: 10px;
+}
+
+.BarShow {
+    background-color: thistle;
+    justify-self: flex-end;
+    height: 60%;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: .1px 3px 6px rgba(0, 0, 0, .6);
+}
+
+.b1 {
+    background-image: linear-gradient(110deg, rgba(76, 107, 138, 0.8) 0%, rgba(76, 107, 138, 0.8) 90%, transparent 50%);
+}
+
+.b2 {
+    background-image: linear-gradient(110deg, rgba(76, 107, 138, 0.8) 0%, rgba(76, 107, 138, 0.8) 40%, transparent 10%);
+}
+
+.b3 {
+    background-image: linear-gradient(110deg, rgba(76, 107, 138, 0.8) 0%, rgba(76, 107, 138, 0.8) 30%, transparent 10%);
+}
+
+.b4 {
+    background-image: linear-gradient(110deg, rgba(76, 107, 138, 0.8) 0%, rgba(76, 107, 138, 0.8) 85%, transparent 50%);
+}
+
+.b5 {
+    background-image: linear-gradient(110deg, rgba(76, 107, 138, 0.8) 0%, rgba(76, 107, 138, 0.8) 85%, transparent 50%);
+}
+
+.b6 {
+    background-image: linear-gradient(110deg, rgba(76, 107, 138, 0.8) 0%, rgba(76, 107, 138, 0.8) 50%, transparent 50%);
+}
+
+.b7 {
+    background-image: linear-gradient(110deg, rgba(76, 107, 138, 0.8) 0%, rgba(76, 107, 138, 0.8) 40%, transparent 30%);
+}
+
+
+@media (max-width: 1100px) {
+
+    .About {
+        grid-template-rows: repeat(6, max-content);
+    }
+
+    .Contact {
+        width: 100%;
+        transform: translateX(0%);
+    }
+
+    .ContactBox button{
+        font-size: 18px;
+    }
+
+    .Education {
+        grid-area: 3 / 1 / 4 / 6;
+    }
+    
+    .Experience {
+        grid-area: 4 / 1 / 5 / 6;
+    }
+
+    .Assets {
+        grid-area: 5 / 1 / 6 / 6;
+        margin-left: 8%;
+    }
+
+    .Skills li {
+        padding: 5px 0;
+        width: 75%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(-35px);
+    }
+
+    .BarShow {
+        background-color: thistle;
+        justify-self: flex-start;
+        height: 100%;
+        width: 80%;
+        padding: 15px 0;
+    }
+}
+
+@media (max-width: 900px) {
+    .About {
+        grid-template-rows: repeat(7, max-content);
+    }
+
+    .MainImage {
+        grid-area: 1 / 1 / 2 / 6;
+        width: 250px;
+        height: 250px;
+        transform: translateX(5%);
+    }
+    
+    .Copy {
+        grid-area: 2 / 1 / 3 / 6;
+        text-align: center;
+        font-size: 40px;
+        padding: 10px 0;
+        padding-left: 20px;
+    }
+
+    .Contact {
+        grid-area: 3 / 3 / 4 / 4;
+        flex-direction: column;
+        align-items: center;
+        background-color: transparent;
+    }
+
+    .Education {
+        grid-area: 4 / 1 / 5 / 6;
+    }
+    
+    .Experience {
+        grid-area: 5 / 1 / 6 / 6;
+    }
+
+    .Experience h1, .Education h1 {
+        font-size: 30px;
+        letter-spacing: 1.5px;
+    }
+    
+    .Experience li, .Education li {
+        margin-bottom: 30px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .Assets {
+        grid-area: 6 / 1 / 7 / 6;
+    }
+
+    .Assets h1:nth-of-type(1) {
+        align-self: center;
+    }
+    
+
+    .Assets ul {
+        font-size: 24px;
+    }
+    
+    .ListImage {
+        width: 50px;
+        height: 50px;
+    }
+
+    .ListItem {
+        padding: 4px 12px;
+        border-radius: 10px;
+    }
+
+    .BarShow {
+        height: 100%;
+        width: 80%;
+        padding: 12px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    
+    .About {
+        left: 5%;
+    }
+
+    .Copy {
+        font-size: 30px;
+    }
+
+    .Contact {
+        font-size: 12px;
+    }
+
+    .Experience h1, .Education h1 {
+        font-size: 24px;
+        letter-spacing: 1.3px;
+    }
+    
+    .Experience li, .Education li {
+        margin-bottom: 30px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .Assets ul {
+        font-size: 18px;
+    }
+
+    .ListImage {
+        width: 40px;
+        height: 40px;
+    }
+
+    .ListItem {
+        padding: 3px 10px;
+        border-radius: 10px;
+    }
+
+    .BarShow {
+        height: 100%;
+        width: 80%;
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .About {
+        left: 1%;
+    }
+
+    .MainImage {
+        width: 200px;
+        height: 200px;
+    }
+
+    .Copy {
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+
+    .Contact {
+        margin: 0;
+        width: 80%;
+        transform: translateX(20%);
+    }
+
+    .ContactBox button {
+        font-size: 14px;
+    }
+
+    .Experience h1, .Education h1 {
+        font-size: 20px;
+        letter-spacing: 1.3px;
+    }
+    
+    .Experience li, .Education li {
+        margin-bottom: 20px;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .Assets {
+        padding: 0;
+        width: 100%;
+    }
+
+    .Assets ul {
+        font-size: 14px;
+    }
+
+    .Assets h1 {
+        font-size: 24px;
+    }
+
+    .ListImage {
+        width: 30px;
+        height: 30px;
+    }
+
+    .ListItem {
+        padding: 3px 7px;
+        border-radius: 8px;
+    }
+
+    .BarShow {
+        height: 100%;
+        width: 80%;
+        padding: 8px 0;
+    }
+}

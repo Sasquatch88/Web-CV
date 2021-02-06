@@ -1,0 +1,73 @@
+.HomePage {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-around;
+    /* display: none; */
+}    
+    
+.HomePage h1 {
+    font-size: 90px;
+    font-weight: 700;
+    letter-spacing: 50px;
+    margin: 0;
+}
+
+.Open {
+    transform: translateX(0);
+}
+
+.Close {
+    transform: translateX(-120%);
+}
+
+.HomePage h2 {
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    .HomePage h1 {
+        font-size: 65px;
+        letter-spacing: 30px;
+    }
+    
+    .HomePage h2 {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+}
+
+@media (max-width: 600px) {
+    .HomePage {
+        top: 20%;
+    }
+
+    .HomePage h1 {
+        font-size: 45px;
+        letter-spacing: 15px;
+    }
+    
+    .HomePage h2 {
+        font-size: 15px;
+        letter-spacing: 1.4px;
+    }
+}
+
+@media (max-width: 350px) {
+    .HomePage h1 {
+        font-size: 30px;
+        letter-spacing: 15px;
+    }
+    
+    .HomePage h2 {
+        font-size: 12px;
+        letter-spacing: 1.2px;
+    }
+}
