@@ -10,7 +10,6 @@ const Menu = (props) => (
                 <NavLink className={classes.NavLink} exact to='/'><MenuItem>Home</MenuItem></NavLink>
                 <NavLink className={classes.NavLink} to='/portfolio'><MenuItem>Portfolio</MenuItem></NavLink>
                 <NavLink className={classes.NavLink} to='/about'><MenuItem>O mnie</MenuItem></NavLink>
-                <NavLink className={classes.NavLink} to='/contact'><MenuItem>Kontakt</MenuItem></NavLink>
             </div>
         </HashRouter>
 

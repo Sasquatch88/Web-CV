@@ -40,7 +40,7 @@
     transition: all .3s;
     background-color: rgba(194, 189, 241, .8);
     border-radius: .8rem;
-    margin: 30px 0;
+    margin: 80px 0;
 }
 
 .Button:hover {
